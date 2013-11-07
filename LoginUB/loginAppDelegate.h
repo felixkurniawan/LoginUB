@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface loginAppDelegate : UIResponder <UIApplicationDelegate>
+@interface loginAppDelegate : UIResponder <UIApplicationDelegate> {
+    NSString *cek;
+    
+}
+
+extern NSString *const FBSessionStateChangedNotification;
 
 @property (strong, nonatomic) UIWindow *window;
+@property (retain, nonatomic)NSString *cek;
+
+-(void)loginWithFacebook;
+- (void)openSession;
+
 
 @end

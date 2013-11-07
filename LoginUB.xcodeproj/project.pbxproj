@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5823F015182B65F700AE1588 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5823F014182B65F700AE1588 /* FacebookSDK.framework */; };
 		DC41A56315FD71FA00C399DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC41A56215FD71FA00C399DC /* UIKit.framework */; };
 		DC41A56515FD71FA00C399DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC41A56415FD71FA00C399DC /* Foundation.framework */; };
 		DC41A56715FD71FA00C399DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC41A56615FD71FA00C399DC /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 		DC41A58615FD71FB00C399DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC41A56415FD71FA00C399DC /* Foundation.framework */; };
 		DC41A58E15FD71FB00C399DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC41A58C15FD71FB00C399DC /* InfoPlist.strings */; };
 		DC41A59115FD71FB00C399DC /* LoginUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41A59015FD71FB00C399DC /* LoginUBTests.m */; };
+		DC41A59C15FD735F00C399DC /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC41A59B15FD735F00C399DC /* mainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,26 +36,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5823F014182B65F700AE1588 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		DC41A55E15FD71FA00C399DC /* LoginUB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginUB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC41A56215FD71FA00C399DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC41A56415FD71FA00C399DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC41A56615FD71FA00C399DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DC41A56A15FD71FA00C399DC /* LoginUB-Info.plist */ = {isa = PBXFileReference; path = "LoginUB-Info.plist"; sourceTree = "<group>"; };
+		DC41A56A15FD71FA00C399DC /* LoginUB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginUB-Info.plist"; sourceTree = "<group>"; };
 		DC41A56C15FD71FA00C399DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC41A56E15FD71FA00C399DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DC41A57015FD71FA00C399DC /* LoginUB-Prefix.pch */ = {isa = PBXFileReference; path = "LoginUB-Prefix.pch"; sourceTree = "<group>"; };
-		DC41A57115FD71FA00C399DC /* loginAppDelegate.h */ = {isa = PBXFileReference; path = loginAppDelegate.h; sourceTree = "<group>"; };
+		DC41A57015FD71FA00C399DC /* LoginUB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoginUB-Prefix.pch"; sourceTree = "<group>"; };
+		DC41A57115FD71FA00C399DC /* loginAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginAppDelegate.h; sourceTree = "<group>"; };
 		DC41A57215FD71FA00C399DC /* loginAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginAppDelegate.m; sourceTree = "<group>"; };
 		DC41A57515FD71FA00C399DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		DC41A57815FD71FA00C399DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		DC41A57A15FD71FA00C399DC /* loginViewController.h */ = {isa = PBXFileReference; path = loginViewController.h; sourceTree = "<group>"; };
+		DC41A57A15FD71FA00C399DC /* loginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
 		DC41A57B15FD71FA00C399DC /* loginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 		DC41A58215FD71FB00C399DC /* LoginUBTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginUBTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC41A58315FD71FB00C399DC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DC41A58B15FD71FB00C399DC /* LoginUBTests-Info.plist */ = {isa = PBXFileReference; path = "LoginUBTests-Info.plist"; sourceTree = "<group>"; };
+		DC41A58B15FD71FB00C399DC /* LoginUBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginUBTests-Info.plist"; sourceTree = "<group>"; };
 		DC41A58D15FD71FB00C399DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DC41A58F15FD71FB00C399DC /* LoginUBTests.h */ = {isa = PBXFileReference; path = LoginUBTests.h; sourceTree = "<group>"; };
+		DC41A58F15FD71FB00C399DC /* LoginUBTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginUBTests.h; sourceTree = "<group>"; };
 		DC41A59015FD71FB00C399DC /* LoginUBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginUBTests.m; sourceTree = "<group>"; };
+		DC41A59A15FD735F00C399DC /* mainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
+		DC41A59B15FD735F00C399DC /* mainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 				DC41A56315FD71FA00C399DC /* UIKit.framework in Frameworks */,
 				DC41A56515FD71FA00C399DC /* Foundation.framework in Frameworks */,
 				DC41A56715FD71FA00C399DC /* CoreGraphics.framework in Frameworks */,
+				5823F015182B65F700AE1588 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,7 @@
 		DC41A56115FD71FA00C399DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5823F014182B65F700AE1588 /* FacebookSDK.framework */,
 				DC41A56215FD71FA00C399DC /* UIKit.framework */,
 				DC41A56415FD71FA00C399DC /* Foundation.framework */,
 				DC41A56615FD71FA00C399DC /* CoreGraphics.framework */,
@@ -116,6 +123,8 @@
 				DC41A57115FD71FA00C399DC /* loginAppDelegate.h */,
 				DC41A57215FD71FA00C399DC /* loginAppDelegate.m */,
 				DC41A57415FD71FA00C399DC /* MainStoryboard_iPhone.storyboard */,
+				DC41A59A15FD735F00C399DC /* mainViewController.h */,
+				DC41A59B15FD735F00C399DC /* mainViewController.m */,
 				DC41A57715FD71FA00C399DC /* MainStoryboard_iPad.storyboard */,
 				DC41A57A15FD71FA00C399DC /* loginViewController.h */,
 				DC41A57B15FD71FA00C399DC /* loginViewController.m */,
@@ -264,6 +273,7 @@
 				DC41A56F15FD71FA00C399DC /* main.m in Sources */,
 				DC41A57315FD71FA00C399DC /* loginAppDelegate.m in Sources */,
 				DC41A57C15FD71FA00C399DC /* loginViewController.m in Sources */,
+				DC41A59C15FD735F00C399DC /* mainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +381,15 @@
 		DC41A59515FD71FB00C399DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../../Documents/FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginUB/LoginUB-Prefix.pch";
 				INFOPLIST_FILE = "LoginUB/LoginUB-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -382,9 +398,15 @@
 		DC41A59615FD71FB00C399DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../../../Documents/FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginUB/LoginUB-Prefix.pch";
 				INFOPLIST_FILE = "LoginUB/LoginUB-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -443,6 +465,7 @@
 				DC41A59615FD71FB00C399DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC41A59715FD71FB00C399DC /* Build configuration list for PBXNativeTarget "LoginUBTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +474,7 @@
 				DC41A59915FD71FB00C399DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

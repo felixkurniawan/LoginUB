@@ -10,4 +10,16 @@
 
 @interface loginViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *dataLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *image1;
+@property (strong, nonatomic) IBOutlet UITextField *user;
+@property (strong, nonatomic) IBOutlet UITextField *pass;
+
+
+
+-(IBAction)loginPressed:(id)sender;
+-(IBAction)loginWithFB:(id)sender;
+
+-(void)doSegue;
+
 @end
